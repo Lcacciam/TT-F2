@@ -97,7 +97,10 @@
         	type: 'preload',
         	message: 'Loading, please wait...',
         	images: images1,
-        	audio: audio
+        	audio: audio,
+		on_success: function(file) {
+        		console.log('File loaded: ',file);
+    			}
         }
         timeline.push(preload1);
 
