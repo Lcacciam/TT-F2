@@ -96,8 +96,8 @@
         var preload1 = {
         	type: 'preload',
         	message: 'Loading, please wait...',
-		//auto_preload: false,
-        	images: ['stim/AF04NES.jpg', 'stim/AF23NES.jpg', 'stim/AM14NES.jpg', 'stim/BM02NES.jpg', 'stim/AM14NES_scr.jpg', 'stim/AF23NES_scr.jpg', 'stim/AF04NES_scr.jpg', 'stim/BM02NES_scr.jpg']
+        	images: images1,
+        	audio: audio
         }
         timeline.push(preload1);
 
@@ -161,7 +161,7 @@
 		var preload2 = {
         	type: 'preload',
         	message: 'Loading, please wait...',
-        	images: ['stim/AF04HAS.jpg', 'stim/AF23HAS.jpg', 'stim/AM14HAS.jpg', 'stim/BM02HAS.jpg', 'stim/AF04SAS.jpg', 'stim/AF23SAS.jpg', 'stim/AM14SAS.jpg', 'stim/BM02SAS.jpg']
+        	images: images2
         }
         timeline.push(preload2);
         
@@ -392,10 +392,10 @@
 		timeline.push(control);
         
         // files for preload//
-       // var audio = ['stim/A-D.wav', 'stim/A-E.wav', 'stim/B-F.wav', 'stim/C-F.wav', 'stim/C-G.wav', 'stim/D-G.wav', 'stim/D-A.wav', 'stim/E-A.wav', 'stim/F-B.wav', 'stim/F-C.wav', 'stim/G-C.wav', 'stim/G-D.wav']
-        //var images = ['stim/AF04HAS.jpg', 'stim/AF23HAS.jpg', 'stim/AM14HAS.jpg', 'stim/BM02HAS.jpg', 'stim/AF04NES.jpg', 'stim/AF23NES.jpg', 'stim/AM14NES.jpg', 'stim/BM02NES.jpg', 'stim/AF04SAS.jpg', 'stim/AF23SAS.jpg', 'stim/AM14SAS.jpg', 'stim/BM02SAS.jpg', 'stim/AM14NES_scr.jpg', 'stim/AF23NES_scr.jpg', 'stim/AF04NES_scr.jpg', 'stim/BM02NES_scr.jpg']
-
-		
+       var audio = ['stim/A-D.wav', 'stim/A-E.wav', 'stim/B-F.wav', 'stim/C-F.wav', 'stim/C-G.wav', 'stim/D-G.wav', 'stim/D-A.wav', 'stim/E-A.wav', 'stim/F-B.wav', 'stim/F-C.wav', 'stim/G-C.wav', 'stim/G-D.wav'];
+        var images1 = ['stim/AF04NES.jpg', 'stim/AF23NES.jpg', 'stim/AM14NES.jpg', 'stim/BM02NES.jpg', 'stim/AM14NES_scr.jpg', 'stim/AF23NES_scr.jpg', 'stim/AF04NES_scr.jpg', 'stim/BM02NES_scr.jpg'];
+        var images2 = ['stim/AF04HAS.jpg', 'stim/AF23HAS.jpg', 'stim/AM14HAS.jpg', 'stim/BM02HAS.jpg', 'stim/AF04SAS.jpg', 'stim/AF23SAS.jpg', 'stim/AM14SAS.jpg', 'stim/BM02SAS.jpg'];
+	
 	    /* Debriefing and final instructions */
 	    var debrief_block = {
 	     	timeline: [
