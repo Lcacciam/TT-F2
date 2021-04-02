@@ -100,7 +100,10 @@
         	audio: audio,
 		on_success: function(file) {
         		console.log('File loaded: ',file);
-    			}
+    			},
+		on_error: function(file) {
+        		console.log('Error loading file: ',file);
+   			}
         }
         timeline.push(preload1);
 
